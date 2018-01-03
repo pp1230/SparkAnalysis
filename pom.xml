@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.history</groupId>
+    <artifactId>SparkAnalysis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-mllib -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.11</artifactId>
+            <version>2.2.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_2.11</artifactId>
+            <version>2.2.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-shade-plugin</artifactId>-->
+                <!--<version>3.1.0</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>shade</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--&lt;!&ndash;<artifactSet>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<excludes>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>classworlds:classworlds</exclude>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>junit:junit</exclude>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>jmock:*</exclude>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>*:xml-apis</exclude>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>org.apache.maven:lib:tests</exclude>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<exclude>log4j:log4j:jar:</exclude>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</excludes>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</artifactSet>&ndash;&gt;-->
+                            <!--<filters>-->
+                                <!--<filter>-->
+                                    <!--<artifact>*:*</artifact>-->
+                                    <!--<excludes>-->
+                                        <!--<exclude>META-INF/*.SF</exclude>-->
+                                        <!--<exclude>META-INF/*.DSA</exclude>-->
+                                        <!--<exclude>META-INF/*.RSA</exclude>-->
+                                    <!--</excludes>-->
+                                <!--</filter>-->
+                            <!--</filters>-->
+                            <!--&lt;!&ndash; Additional configuration. &ndash;&gt;-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
+
+</project>
